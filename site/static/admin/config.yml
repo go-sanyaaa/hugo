@@ -9,6 +9,8 @@ collections: # A list of collections the CMS should be able to edit
     label: "Post" # Used in the UI, ie.: "New Post"
     folder: "site/content/post" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
+    editor:
+      preview: false
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
@@ -21,6 +23,8 @@ collections: # A list of collections the CMS should be able to edit
       - file: "site/content/_index.md"
         label: "Home Page"
         name: "home"
+        editor:
+          preview: false
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: string}
@@ -40,6 +44,8 @@ collections: # A list of collections the CMS should be able to edit
       - file: "site/content/contact/_index.md"
         label: "Contact Page"
         name: "contact"
+        editor:
+          preview: false
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Logo, name: logo, widget: image}
@@ -57,6 +63,8 @@ collections: # A list of collections the CMS should be able to edit
       - file: "site/content/products/_index.md"
         label: "Products Page"
         name: "products"
+        editor:
+          preview: false
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
@@ -70,6 +78,8 @@ collections: # A list of collections the CMS should be able to edit
       - file: "site/content/values/_index.md"
         label: "Values Page"
         name: "values"
+        editor:
+          preview: false
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
